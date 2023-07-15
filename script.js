@@ -1,6 +1,6 @@
 const date = new Date();
 function compute() {
-  if (parseInt(principle.value) <= 0) {
+  if (parseInt(principle.value) <= 0 || principle.value == "") {
     alert("Enter a positive number");
     principle.focus();
     return;
