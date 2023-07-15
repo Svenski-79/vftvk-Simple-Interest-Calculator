@@ -1,5 +1,9 @@
 const date = new Date();
 function compute() {
+  if (parseInt(principle.value) <= 0) {
+    alert("Enter a positive number");
+    return;
+  }
   result =
     (parseInt(rate.value) * parseInt(years.value) * parseInt(principle.value)) /
     100;
