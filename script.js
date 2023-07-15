@@ -9,7 +9,7 @@ function compute() {
     (parseInt(rate.value) * parseInt(years.value) * parseInt(principle.value)) /
     100;
   returnYear = date.getFullYear() + parseInt(years.value);
-  resultText.innerText = `if you deposit ${principle.value} at an interest rate of ${rate.value}%, you will receive an amount of ${result} in the year ${returnYear}`;
+  resultText.innerText = `if you deposit ${principle.value} at a interest rate of ${rate.value}%, you will receive an amount of ${result} in the year ${returnYear}`;
 }
 
 rate.addEventListener("input", () => {
