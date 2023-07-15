@@ -9,24 +9,24 @@
 </head>
 
 <body>
-    <h1>Simple Interest Calculator</h1>
-
-    <div class="wrapper">
-        <p class="label">Amount </p> <input type="number" id="principal">
+    <div class="wrapperclass">
+        <h1>Simple Interest Calculator</h1>
+        <div class="wrapper">
+            <p class="label">Amount </p> <input type="number" id="principal">
+        </div>
+        <div class="wrapper">
+            <p class="label">Interest </p> <input type="range" id="rate" min="0" max="100"> <span class="rateValue"
+                contenteditable="true"></span>
+        </div>
+        <div class="wrapper">
+            <p class="label">No. of Years</p> <input type="number" id="years"> <br />
+        </div>
+        <div class="wrapper">
+            <p class="label">Result :</p>
+            <p id="result"></p>
+        </div>
+        <button onclick="compute()">Compute</button>
     </div>
-    <div class="wrapper">
-        <p class="label">Rate </p> <input type="range" id="rate" min="0" max="100"> <span class="rateValue"
-            contenteditable="true"></span>
-    </div>
-
-    <div class="wrapper">
-        <p class="label">No. of Years</p> <input type="number" id="years"> <br />
-    </div>
-    <div class="wrapper">Interest : <p id="result"></p>
-    </div>
-
-    <button onclick="compute()">Compute</button>
-    <input type="range" id="myRange" min="0" max="100" value="50">
 
 </body>
 
