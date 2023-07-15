@@ -2,6 +2,7 @@ const date = new Date();
 function compute() {
   if (parseInt(principle.value) <= 0) {
     alert("Enter a positive number");
+    principle.focus();
     return;
   }
   result =

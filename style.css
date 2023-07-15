@@ -60,3 +60,6 @@ button {
   font-size: 1.05rem;
   line-height: 2.4ch;
 }
+#result::selection {
+  background-color: yellow;
+}
